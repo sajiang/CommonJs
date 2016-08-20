@@ -1,0 +1,24 @@
+{
+  "name": "commonjs",
+  "version": "1.0.0",
+  "description": "通用工具函数",
+  "main": "cookie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajiang/CommonJs.git"
+  },
+  "author": "SaJiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sajiang/CommonJs/issues"
+  },
+  "homepage": "https://github.com/sajiang/CommonJs#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}
