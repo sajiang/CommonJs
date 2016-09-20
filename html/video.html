@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>西藏饭店</title>
+    <style type="text/css">html {
+        height: 100%;
+        margin: 0;
+    }
+    body {
+        height: 100%;
+        margin: 0;
+        background: #000000;
+    }
+
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+</head>
+<body>
+<!-- loading -->
+<div id='loading' class="loading">
+    <link href="css/loading.css" rel="stylesheet" type="text/css"/>
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    window.onload = function () {
+        setTimeout(function () {
+            var loadingDiv = document.getElementById("loading");
+            loadingDiv.style.display = "none";
+        }, 500);
+    }
+</script>
+
+<script src="http://qzonestyle.gtimg.cn/open/qcloud/video/h5/h5connect.js"></script>
+
+<div class="loading">
+    <div id="id_video_container" ></div>
+</div>
+
+<script type="text/javascript"> (function () {
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null)return unescape(r[2]);
+        return null;
+    }
+    var fileId = getUrlParam("videoId");//14651978969260262711
+    if(fileId && fileId != "") {
+        var option = {
+            "auto_play": "0",
+            "file_id": fileId,
+            "app_id": "1251448083",
+            "width": 480,
+            "height": 320
+        };
+        new qcVideo.Player("id_video_container", option);
+    }
+})() </script>
+
+</body>
+</html>
